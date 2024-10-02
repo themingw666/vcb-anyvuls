@@ -1,0 +1,38 @@
+{
+  "name": "vcbdigibank.vietcombank.com.vn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node ./src/index.js",
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prisma": {
+    "schema": "./src/prisma/schema.prisma"
+  },
+  "description": "",
+  "dependencies": {
+    "@babel/runtime": "^7.25.6",
+    "@prisma/client": "^5.19.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.4",
+    "nunjucks": "^3.2.4",
+    "path": "^0.12.7",
+    "prisma": "^5.19.1",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-env": "^7.25.4"
+  }
+}

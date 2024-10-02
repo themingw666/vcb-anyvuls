@@ -1,0 +1,3008 @@
+<!DOCTYPE html>
+<html lang="en" data-critters-container="">
+  <head>
+    <meta charset="utf-8">
+    <title>VCB Digibank</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=0, no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      html {
+        -webkit-tap-highlight-color: transparent
+      }
+
+      body {
+        color: #000000d9;
+        font-variant: tabular-nums;
+        font-size: 14px
+      }
+
+      body {
+        color: #000000d9
+      }
+
+      body,
+      html {
+        width: 100%;
+        height: 100%
+      }
+
+      *,
+      :after,
+      :before {
+        box-sizing: border-box
+      }
+
+      html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        --antd-wave-shadow-color: #1890ff;
+        --scroll-bar: 0
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+      }
+
+      body {
+        margin: 0;
+        line-height: 1.5715;
+        background-color: #fff;
+        font-feature-settings: "tnum"
+      }
+
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb
+      }
+
+      :before,
+      :after {
+        --tw-content: ""
+      }
+
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent
+      }
+
+      body {
+        margin: 0;
+        line-height: inherit
+      }
+
+      :root {
+        --backgroundImage-bgDecorativeSecondary: linear-gradient(275deg, #C8E7AA .32%, #FFFDF7 100%);
+        --backgroundImage-bgDecorativeTertiary: linear-gradient(290deg, #EAF6FF 9.78%, #F3FFE9 109.56%);
+        --backgroundImage-bgDecorativePrimary: radial-gradient(300.55% 959.41% at 293.35% -237.5%, #00502F 0%, #0A6F47 67.24%, #629F0D 98.3%);
+        --backgroundImage-bgDecorative5: linear-gradient(250deg, #C2E4FF 0%, rgba(243, 255, 204, .1) 47.25%);
+        --backgroundImage-bgDecorativeTabs: radial-gradient(91.68% 546.71% at 104.23% 0%, rgba(0, 80, 47, .88) 0%, rgba(10, 111, 71, .88) 10.98%, rgba(98, 159, 13, .88) 85.34%);
+        --backgroundImage-bgDecorativeSuccess: radial-gradient(93.79% 93.79% at 92.47% 3.55%, rgba(173, 219, 255, .3) 4.66%, rgba(230, 255, 146, .05) 85.39%);
+        --backgroundImage-buttonPrimary: radial-gradient(300.55% 959.41% at 293.35% -237.5%, #00502F 0%, #0A6F47 67.24%, #629F0D 98.3%);
+        --backgroundImage-buttonSecondary: linear-gradient(290deg, #EAF6FF 9.78%, #F3FFE9 109.56%);
+        --colors-backgroundInverse: 65, 65, 65;
+        --colors-backgroundBody: 243, 245, 247;
+        --colors-buttonTertiary: 255, 255, 255;
+        --colors-neutral-0: 255, 255, 255;
+        --colors-neutral-2: 250, 250, 250;
+        --colors-neutral-5: 242, 242, 242;
+        --colors-neutral-10: 231, 231, 231;
+        --colors-neutral-20: 208, 208, 208;
+        --colors-neutral-30: 183, 183, 183;
+        --colors-neutral-40: 160, 160, 160;
+        --colors-neutral-60: 89, 89, 89;
+        --colors-neutral-70: 77, 77, 77;
+        --colors-neutral-80: 65, 65, 65;
+        --colors-neutral-100: 0, 0, 0;
+        --colors-primary-1: 7, 76, 49;
+        --colors-primary-2: 161, 192, 56;
+        --colors-secondary-10: 248, 255, 236;
+        --colors-secondary-20: 236, 251, 210;
+        --colors-secondary-30: 218, 240, 180;
+        --colors-secondary-40: 189, 215, 145;
+        --colors-secondary-60: 161, 199, 109;
+        --colors-secondary-80: 133, 185, 77;
+        --colors-sematic-red: 222, 62, 55;
+        --colors-sematic-lightRed: 243, 221, 221;
+        --colors-sematic-blue: 56, 115, 209;
+        --colors-sematic-green: 0, 142, 33;
+        --colors-sematic-orange: 242, 87, 10;
+        --colors-sematic-yellow: 255, 204, 0;
+        --colors-sematic-brown: 153, 88, 42;
+        --colors-sematic-purple: 121, 60, 195;
+        --colors-backgroundPrimary: 255, 255, 255;
+        --colors-backgroundSecondary: 255, 255, 255;
+        --colors-backgroundTertiary: 250, 250, 250;
+        --colors-backgroundDisabled: 231, 231, 231;
+        --colors-backgroundHover: 241, 244, 246;
+        --colors-backgroundActive: 236, 251, 210;
+        --colors-borderPrimary: 231, 231, 231;
+        --colors-borderSecondary: 242, 242, 242;
+        --colors-borderDark: 208, 208, 208;
+        --colors-borderDanger: 222, 62, 55;
+        --colors-textBasePrimary: 0, 0, 0;
+        --colors-textBaseSecondary: 89, 89, 89;
+        --colors-textBaseTertiary: 160, 160, 160;
+        --colors-textPrimary1: 7, 76, 49;
+        --colors-textPrimary2: 161, 192, 56;
+        --colors-textLink: 7, 76, 49;
+        --colors-textHighlightPrimary: 161, 192, 56;
+        --colors-textHighlightSecondary: 222, 62, 55;
+        --colors-textBasePrimaryInverse: 255, 255, 255;
+        --colors-textBaseSecondaryInverse: 183, 183, 183;
+        --colors-textDanger: 222, 62, 55;
+        --colors-textSuccess: 0, 142, 33;
+        --colors-textDisabled: 160, 160, 160;
+        --colors-textBasePrimaryOnBgDecorativePrimary: 255, 255, 255;
+        --colors-textBaseSecondaryOnBgDecorativePrimary: 255, 255, 255;
+        --colors-textBasePrimaryOnBgDecorativeSecondary: 0, 0, 0;
+        --colors-textBaseSecondaryOnBgDecorativeSecondary: 89, 89, 89;
+        --colors-textBasePrimaryOnBgDecorativeTertiary: 0, 0, 0;
+        --colors-textBaseSecondaryOnBgDecorativeTertiary: 89, 89, 89;
+        --colors-button-primary-borderColor: 0, 0, 0;
+        --colors-button-primary-contentColor: 255, 255, 255;
+        --colors-button-primary-borderColorDisabled: 208, 208, 208;
+        --colors-button-primary-bgColorDisabled: 208, 208, 208;
+        --colors-button-primary-contentColorDisabled: 89, 89, 89;
+        --colors-button-secondary-borderColor: 231, 231, 231;
+        --colors-button-secondary-contentColor: 7, 76, 49;
+        --colors-button-secondary-borderColorDisabled: 231, 231, 231;
+        --colors-button-secondary-bgColorDisabled: 231, 231, 231;
+        --colors-button-secondary-contentColorDisabled: 89, 89, 89;
+        --colors-button-tertiary-borderColor: 231, 231, 231;
+        --colors-button-tertiary-contentColor: 7, 76, 49;
+        --colors-button-tertiary-borderColorDisabled: 231, 231, 231;
+        --colors-button-tertiary-bgColorDisabled: 231, 231, 231;
+        --colors-button-tertiary-contentColorDisabled: 89, 89, 89;
+        --colors-button-textLink-contentColor: 7, 76, 49;
+        --colors-button-textLink-contentColorDisabled: 89, 89, 89;
+        --colors-input-borderColor: 183, 183, 183;
+        --colors-input-placeholderColor: 89, 89, 89;
+        --colors-input-bgColor: 255, 255, 255;
+        --colors-input-borderHoverColor: 161, 192, 56;
+        --colors-input-borderFocusColor: 161, 192, 56;
+        --colors-input-backgroundDisabled: 242, 242, 242;
+        --colors-input-borderDangerColor: 222, 62, 55;
+        --colors-input-labelColor: 89, 89, 89;
+        --colors-input-borderColorDisabled: 208, 208, 208;
+        --colors-input-contentColor: 0, 0, 0;
+        --colors-input-contentDisabled: 89, 89, 89;
+        --colors-input-prefixIconColor: 0, 0, 0;
+        --colors-input-suffixIconColor: 0, 0, 0;
+        --colors-tooltip-contentColor: 255, 255, 255;
+        --colors-tooltip-bgColor: 65, 65, 65;
+        --colors-toggle-activeColor: 161, 192, 56;
+        --colors-toggle-checkColor: 255, 255, 255;
+        --colors-toggle-bgColor: 231, 231, 231;
+        --colors-toggle-bgColorDisabled: 208, 208, 208;
+        --colors-toggle-iconColor: 255, 255, 255;
+        --colors-toggle-iconColorActive: 255, 255, 255;
+        --colors-toggle-iconColorDisabled: 255, 255, 255;
+        --fontSize-heading-1-0: 36px;
+        --fontSize-heading-1-1-lineHeight: 44px;
+        --fontSize-heading-1-1-fontWeight: 800;
+        --fontSize-heading-2-0: 32px;
+        --fontSize-heading-2-1-lineHeight: 40px;
+        --fontSize-heading-2-1-fontWeight: 800;
+        --fontSize-heading-3-0: 28px;
+        --fontSize-heading-3-1-lineHeight: 32px;
+        --fontSize-heading-3-1-fontWeight: 800;
+        --fontSize-heading-4-0: 24px;
+        --fontSize-heading-4-1-lineHeight: 32px;
+        --fontSize-heading-4-1-fontWeight: 800;
+        --fontSize-heading-5-extrabold-0: 18px;
+        --fontSize-heading-5-extrabold-1-lineHeight: 28px;
+        --fontSize-heading-5-extrabold-1-fontWeight: 800;
+        --fontSize-heading-5-bold-0: 18px;
+        --fontSize-heading-5-bold-1-lineHeight: 28px;
+        --fontSize-heading-5-bold-1-fontWeight: 700;
+        --fontSize-heading-5-regular-0: 18px;
+        --fontSize-heading-5-regular-1-lineHeight: 28px;
+        --fontSize-heading-5-regular-1-fontWeight: 400;
+        --fontSize-16-bold-0: 16px;
+        --fontSize-16-bold-1-lineHeight: 24px;
+        --fontSize-16-bold-1-fontWeight: 700;
+        --fontSize-16-semibold-0: 16px;
+        --fontSize-16-semibold-1-lineHeight: 24px;
+        --fontSize-16-semibold-1-fontWeight: 600;
+        --fontSize-16-medium-0: 16px;
+        --fontSize-16-medium-1-lineHeight: 24px;
+        --fontSize-16-medium-1-fontWeight: 500;
+        --fontSize-14-bold-0: 14px;
+        --fontSize-14-bold-1-lineHeight: 20px;
+        --fontSize-14-bold-1-fontWeight: 700;
+        --fontSize-14-semibold-0: 14px;
+        --fontSize-14-semibold-1-lineHeight: 20px;
+        --fontSize-14-semibold-1-fontWeight: 600;
+        --fontSize-14-medium-0: 14px;
+        --fontSize-14-medium-1-lineHeight: 20px;
+        --fontSize-14-medium-1-fontWeight: 500;
+        --fontSize-12-bold-0: 12px;
+        --fontSize-12-bold-1-lineHeight: 16px;
+        --fontSize-12-bold-1-fontWeight: 700;
+        --fontSize-12-semibold-0: 12px;
+        --fontSize-12-semibold-1-lineHeight: 16px;
+        --fontSize-12-semibold-1-fontWeight: 600;
+        --fontSize-12-medium-0: 12px;
+        --fontSize-12-medium-1-lineHeight: 16px;
+        --fontSize-12-medium-1-fontWeight: 500;
+        --fontSize-currency-1-0: 24px;
+        --fontSize-currency-1-1-lineHeight: 32px;
+        --fontSize-currency-1-1-fontWeight: 800;
+        --fontSize-currency-1-1-letterSpacing: 1.2px;
+        --fontSize-currency-2-0: 18px;
+        --fontSize-currency-2-1-lineHeight: 28px;
+        --fontSize-currency-2-1-fontWeight: 800;
+        --fontSize-currency-2-1-letterSpacing: .9px;
+        --fontSize-currency-2-1-0: 18px;
+        --fontSize-currency-2-1-1-lineHeight: 24px;
+        --fontSize-currency-2-1-1-fontWeight: 800;
+        --fontSize-currency-2-1-1-letterSpacing: .8px;
+        --fontSize-currency-3-0: 16px;
+        --fontSize-currency-3-1-lineHeight: 24px;
+        --fontSize-currency-3-1-fontWeight: 800;
+        --fontSize-currency-3-1-letterSpacing: .8px;
+        --fontSize-currency-4-0: 14px;
+        --fontSize-currency-4-1-lineHeight: 20px;
+        --fontSize-currency-4-1-fontWeight: 800;
+        --fontSize-currency-4-1-letterSpacing: 1.2px;
+        --fontSize-currency-5-0: 12px;
+        --fontSize-currency-5-1-lineHeight: 16px;
+        --fontSize-currency-5-1-fontWeight: 800;
+        --fontSize-currency-5-1-letterSpacing: 1.2px;
+        --fontSize-currency-6-0: 12px;
+        --fontSize-currency-6-1-lineHeight: 12px;
+        --fontSize-currency-6-1-fontWeight: 800;
+        --fontSize-currency-6-1-letterSpacing: 1.2px;
+        --boxShadow-line: 0px 1px 0px 0px #F2F2F2;
+        --boxShadow-extra-small: 0px 1px 2px 0px rgba(16, 24, 40, .05);
+        --boxShadow-small: 0px 1px 3px 0px rgba(16, 24, 40, .1);
+        --boxShadow-medium: 0px 4px 8px -2px rgba(16, 24, 40, .1), 0px 2px 4px -2px rgba(16, 24, 40, .06);
+        --boxShadow-large: 0px 12px 16px -4px rgba(16, 24, 40, .1), 0px 4px 6px -2px rgba(16, 24, 40, .05);
+        --boxShadow-extra-large: 0px 20px 24px -4px rgba(16, 24, 40, .1), 0px 8px 8px -4px rgba(16, 24, 40, .04);
+        --boxShadow-extra-large-2: 0px 24px 48px -12px rgba(16, 24, 40, .25);
+        --boxShadow-extra-large-3: 0px 32px 64px -12px rgba(16, 24, 40, .2);
+        --boxShadow-mediumPrimary: 0px 4px 16px 0px rgba(161, 199, 109, .6);
+        --boxShadow-primaryLight: 0px 1px 2px rgba(16, 24, 40, .05), 0px 0px 0px 4px #E9F3D7;
+        --boxShadow-sematicRed: 0px 0px 0px 4px #FEE4E2, 0px 1px 2px 0px rgba(16, 24, 40, .05);
+        --boxShadow-doubleRing: 0px 0px 0px 4px rgba(161, 192, 56, .16), 0px 0px 0px 2px rgba(161, 192, 56, .16);
+        --dropShadow-line: 0px 1px 0px 0px #F2F2F2;
+        --dropShadow-extra-small: 0px 1px 2px 0px rgba(16, 24, 40, .05);
+        --dropShadow-small: 0px 1px 3px 0px rgba(16, 24, 40, .1);
+        --dropShadow-medium: 0px 4px 8px -2px rgba(16, 24, 40, .1), 0px 2px 4px -2px rgba(16, 24, 40, .06);
+        --dropShadow-large: 0px 12px 16px -4px rgba(16, 24, 40, .1), 0px 4px 6px -2px rgba(16, 24, 40, .05);
+        --dropShadow-extra-large: 0px 20px 24px -4px rgba(16, 24, 40, .1), 0px 8px 8px -4px rgba(16, 24, 40, .04);
+        --dropShadow-extra-large-2: 0px 24px 48px -12px rgba(16, 24, 40, .25);
+        --dropShadow-extra-large-3: 0px 32px 64px -12px rgba(16, 24, 40, .2);
+        --dropShadow-mediumPrimary: 0px 4px 16px 0px rgba(161, 199, 109, .6);
+        --dropShadow-primaryLight: 0px 0px 0px 4px #FEE4E2, 0px 1px 2px 0px rgba(16, 24, 40, .05);
+        --dropShadow-sematicRed: 0px 0px 0px 4px #FEE4E2, 0px 1px 2px 0px rgba(16, 24, 40, .05);
+        --dropShadow-doubleRing: 0px 0px 0px 4px rgba(161, 192, 56, .16), 0px 0px 0px 2px rgba(161, 192, 56, .16)
+      }
+
+      * {
+        scrollbar-color: initial;
+        scrollbar-width: initial
+      }
+
+      *,
+      :before,
+      :after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / .5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style:
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url(Manrope-Medium.21bd6fd9e559ed8a.ttf) format("truetype");
+        font-weight: 500;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url(Manrope-SemiBold.a1b1fe1695c8a0a0.ttf) format("truetype");
+        font-weight: 600;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url(Manrope-Bold.13e0014e443920ad.ttf) format("truetype");
+        font-weight: 700;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: Manrope;
+        src: url(Manrope-ExtraBold.b3116da298432cf5.ttf) format("truetype");
+        font-weight: 800;
+        font-display: swap
+      }
+
+      html,
+      body {
+        position: relative;
+        height: auto;
+        font-weight: 500;
+        font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol !important;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-backgroundBody), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-textBasePrimary), var(--tw-text-opacity))
+      }
+
+      html {
+        --antd-wave-shadow-color: rgba(var(--colors-toggle-activeColor))
+      }
+    </style>
+    <link rel="stylesheet" href="styles.4082bfca6b87817b.css?v=3.1.5.1" media="all" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="styles.4082bfca6b87817b.css?v=3.1.5.1">
+    </noscript>
+    <script>
+      (window.BOOMR_mq = window.BOOMR_mq || []).push(["addVar", {
+        "rua.upush": "false",
+        "rua.cpush": "false",
+        "rua.upre": "false",
+        "rua.cpre": "false",
+        "rua.uprl": "false",
+        "rua.cprl": "false",
+        "rua.cprf": "false",
+        "rua.trans": "",
+        "rua.cook": "false",
+        "rua.ims": "false",
+        "rua.ufprl": "false",
+        "rua.cfprl": "false",
+        "rua.isuxp": "false",
+        "rua.texp": "norulematch"
+      }]);
+    </script>
+    <script>
+      ! function(e) {
+        var n = "https://s.go-mpulse.net/boomerang/";
+        if ("False" == "True") e.BOOMR_config = e.BOOMR_config || {}, e.BOOMR_config.PageParams = e.BOOMR_config.PageParams || {}, e.BOOMR_config.PageParams.pci = !0, n = "https://s2.go-mpulse.net/boomerang/";
+        if (window.BOOMR_API_key = "B4NLN-E6VEX-EWAHR-T4CV7-CRGWM", function() {
+            function e() {
+              if (!o) {
+                var e = document.createElement("script");
+                e.id = "boomr-scr-as", e.src = window.BOOMR.url, e.async = !0, i.parentNode.appendChild(e), o = !0
+              }
+            }
+
+            function t(e) {
+              o = !0;
+              var n, t, a, r, d = document,
+                O = window;
+              if (window.BOOMR.snippetMethod = e ? "if" : "i", t = function(e, n) {
+                  var t = d.createElement("script");
+                  t.id = n || "boomr-if-as", t.src = window.BOOMR.url, BOOMR_lstart = (new Date).getTime(), e = e || d.body, e.appendChild(t)
+                }, !window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]\./)) return window.BOOMR.snippetMethod = "s", void t(i.parentNode, "boomr-async");
+              a = document.createElement("IFRAME"), a.src = "about:blank", a.title = "", a.role = "presentation", a.loading = "eager", r = (a.frameElement || a).style, r.width = 0, r.height = 0, r.border = 0, r.display = "none", i.parentNode.appendChild(a);
+              try {
+                O = a.contentWindow, d = O.document.open()
+              } catch (_) {
+                n = document.domain, a.src = "javascript:var d=document.open();d.domain='" + n + "';void(0);", O = a.contentWindow, d = O.document.open()
+              }
+              if (n) d._boomrl = function() {
+                  this.domain = n, t()
+                }, d.write(" < bo "+"
+                  dy onload = 'document._boomrl();' > ");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("
+                  load ",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("
+                  onload ",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"
+                  B4NLN - E6VEX - EWAHR - T4CV7 - CRGWM ";var i=document.currentScript||document.getElementsByTagName("
+                  script ")[0],o=!1,r=document.createElement("
+                  link ");if(r.relList&&"
+                  function "==typeof r.relList.supports&&r.relList.supports("
+                  preload ")&&"
+                  as "in r)window.BOOMR.snippetMethod="
+                  p ",r.href=window.BOOMR.url,r.rel="
+                  preload ",r.as="
+                  script ",r.addEventListener("
+                  load ",e),r.addEventListener("
+                  error ",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("
+                  load ",a,!1);else if(window.attachEvent)window.attachEvent("
+                  onload ",a)}}(),"
+                  ".length>0)if(e&&"
+                  performance "in e&&e.performance&&"
+                  function "==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="
+                  "=="
+                  true "?1:0,t="
+                  cookiepresent ",a="
+                  naom2six24dqwzw6oxvq - f - ccd857d3f - clientnsv4 - s.akamaihd.net ",i="
+                  false "=="
+                  true "?2:1,o={"
+                  ak.v ":"
+                  37 ","
+                  ak.cp ":"
+                  1663877 ","
+                  ak.ai ":parseInt("
+                  1074212 ",10),"
+                  ak.ol ":"
+                  0 ","
+                  ak.cr ":1,"
+                  ak.ipv ":4,"
+                  ak.proto ":"
+                  h2 ","
+                  ak.rid ":"
+                  401 b8489 ","
+                  ak.r ":45686,"
+                  ak.a2 ":n,"
+                  ak.m ":"
+                  a ","
+                  ak.n ":"
+                  essl ","
+                  ak.bpcip ":"
+                  104.28 .205 .0 ","
+                  ak.cport ":26876,"
+                  ak.gh ":"
+                  23.48 .172 .132 ","
+                  ak.quicv ":"
+                  ","
+                  ak.tlsv ":"
+                  tls1 .3 ","
+                  ak .0 rtt ":"
+                  ","
+                  ak.csrc ":" - ","
+                  ak.acc ":"
+                  ","
+                  ak.t ":"
+                  1725855211 ","
+                  ak.ak ":"
+                  hOBiQwZUYzCg5VSAfCLimQ == 7 / 0x kj9A75GzOgnwAJtc / IKnm / iBPjdLsEtsVYFTGgzoudYD2 + K6H07VXmSLePCr7SwuoR + V / xiY32apRWAWivh + z0I / 0 EtdKwdqt067jX / 5 kbiXp + g0LndZaicG1Kwi8qSzxIMMh2mOnKY9K8DKEq4bwTWQpXh9UdpQHs0CZ8WJhi6jfriaJQPLmYS6FCohRuuwRmd2p9fsjxWQRf6WUnusx7q73ybGwT / q3iqv34Wjp0veu13NxPZT5VOL8ZgALQXsR1P++E8Kh92 + TFhcSt2Hr5ChqjSqk985Xg2v4XY1xpxZxrryHYWatGHu + XDyw6KuBDQYBPMwrma813HcQS5ZSizj9zbUpnB8vYD6hRXtEp + R7e7NBhncDyMZM6sW9XDXOnCEjsBAf + oBBkQcGPxon2EMqJ0JUwFAkDylrkw = ","
+                  ak.pv ":"
+                  2 ","
+                  ak.dpoabenc ":"
+                  ","
+                  ak.tf ":i};if("
+                  "!==t)o["
+                  ak.ruds "]=t;var r={i:!1,av:function(n){var t="
+                  http.initiator ";if(n&&(!n[t]||"
+                  spa_hard "===n[t]))o["
+                  ak.feo "]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["
+                  ak.bpcip ","
+                  ak.cport ","
+                  ak.cr ","
+                  ak.csrc ","
+                  ak.gh ","
+                  ak.ipv ","
+                  ak.m ","
+                  ak.n ","
+                  ak.ol ","
+                  ak.proto ","
+                  ak.quicv ","
+                  ak.tlsv ","
+                  ak .0 rtt ","
+                  ak.r ","
+                  ak.acc ","
+                  ak.t ","
+                  ak.tf "];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("
+                  before_beacon ",r.av,null,null),e("
+                  onbeacon ",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);
+    </script>
+    <link href="https://s.go-mpulse.net/boomerang/B4NLN-E6VEX-EWAHR-T4CV7-CRGWM" rel="preload" as="script">
+    <iframe src="about:blank" title="" role="presentation" loading="eager" style="width: 0px; height: 0px; border: 0px; display: none;"></iframe>
+    <style>
+      .loading[_ngcontent-ng-c2746547830] {
+        position: fixed;
+        z-index: 9000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0009
+      }
+
+      .vs-loading__load[_ngcontent-ng-c2746547830] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        margin: auto;
+        inset: 0
+      }
+
+      .lds[_ngcontent-ng-c2746547830] {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1.5)
+      }
+
+      .vs-loading__progress__bar[_ngcontent-ng-c2746547830] {
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-primary-2), var(--tw-bg-opacity));
+        height: 100%;
+        position: relative;
+        border-radius: 0 10px 10px 0
+      }
+
+      .vs-loading--default[_ngcontent-ng-c2746547830] .lds[_ngcontent-ng-c2746547830] {
+        border-radius: 50%
+      }
+
+      .vs-loading--default[_ngcontent-ng-c2746547830] .lds__1[_ngcontent-ng-c2746547830] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgb(114, 191, 0);
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-primary-2), var(--tw-border-opacity));
+        border-radius: inherit;
+        border-top: 2px solid transparent !important;
+        border-left: 2px solid transparent !important;
+        border-right: 2px solid transparent !important;
+        animation: _ngcontent-ng-c2746547830_rotate .8s ease infinite;
+        top: 0
+      }
+
+      .vs-loading--default[_ngcontent-ng-c2746547830] .lds__2[_ngcontent-ng-c2746547830] {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 2px dashed rgb(114, 191, 0);
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-primary-2), var(--tw-border-opacity));
+        border-radius: inherit;
+        border-top: 2px solid transparent !important;
+        border-left: 2px solid transparent !important;
+        border-right: 2px solid transparent !important;
+        animation: _ngcontent-ng-c2746547830_rotate .8s linear infinite;
+        opacity: .4
+      }
+
+      @keyframes _ngcontent-ng-c2746547830_rotate {
+        0% {
+          transform: rotate(0)
+        }
+
+        to {
+          transform: rotate(1turn)
+        }
+      }
+    </style>
+    <style>
+      @media print {
+        @page {
+          size: A4;
+          margin-top: 50px;
+          margin-bottom: 50px
+        }
+
+        body[_ngcontent-ng-c1654751229] {
+          margin: 50mm 0
+        }
+
+        .pagebreak[_ngcontent-ng-c1654751229] {
+          page-break-before: always
+        }
+
+        .notefooterprint[_ngcontent-ng-c1654751229] {
+          z-index: 1;
+          position: absolute;
+          bottom: 0;
+          text-align: left;
+          left: 0;
+          width: 100%;
+          display: block
+        }
+
+        .notefooter[_ngcontent-ng-c1654751229] {
+          display: none
+        }
+      }
+
+      @media screen {
+        .notefooter[_ngcontent-ng-c1654751229] {
+          display: block
+        }
+
+        .notefooterprint[_ngcontent-ng-c1654751229] {
+          display: none
+        }
+      }
+
+      body[_ngcontent-ng-c1654751229] {
+        font-family: Times New Roman, Times, serif;
+        background-color: #fff;
+        color: #000;
+        line-height: 1.2em;
+        font-size: 1em;
+        margin: 20mm 0
+      }
+
+      a[_ngcontent-ng-c1654751229] {
+        color: #000;
+        text-decoration: none
+      }
+
+      #print-area[_ngcontent-ng-c1654751229] {
+        font-family: Times New Roman, Times, serif;
+        padding-left: .8cm;
+        padding-right: .8cm;
+        width: 21cm;
+        margin: 0 auto
+      }
+
+      .table-print[_ngcontent-ng-c1654751229] {
+        border: 1pt solid #000;
+        width: 100%;
+        border-collapse: collapse
+      }
+
+      .table-print[_ngcontent-ng-c1654751229] td[_ngcontent-ng-c1654751229] {
+        border: 1pt solid #000;
+        padding: 5px 10px
+      }
+
+      .table_noborder[_ngcontent-ng-c1654751229] {
+        border: none !important
+      }
+
+      .table_noborder[_ngcontent-ng-c1654751229] td[_ngcontent-ng-c1654751229] {
+        border: none !important;
+        padding: 5px 0
+      }
+
+      .text-center[_ngcontent-ng-c1654751229] {
+        text-align: center
+      }
+
+      .mt-5[_ngcontent-ng-c1654751229] {
+        margin-top: 5px
+      }
+
+      .mb-5[_ngcontent-ng-c1654751229] {
+        margin-bottom: 5px
+      }
+
+      .mb-10[_ngcontent-ng-c1654751229] {
+        margin-bottom: 10px
+      }
+
+      .mt-10[_ngcontent-ng-c1654751229] {
+        margin-top: 10px
+      }
+
+      .mt-15[_ngcontent-ng-c1654751229] {
+        margin-top: 15px
+      }
+
+      .mb-15[_ngcontent-ng-c1654751229] {
+        margin-bottom: 15px
+      }
+
+      .mt-20[_ngcontent-ng-c1654751229] {
+        margin-top: 20px
+      }
+
+      .mb-20[_ngcontent-ng-c1654751229] {
+        margin-bottom: 20px
+      }
+
+      .b[_ngcontent-ng-c1654751229] {
+        font-weight: 700
+      }
+
+      .i[_ngcontent-ng-c1654751229] {
+        font-style: italic
+      }
+
+      .undeline[_ngcontent-ng-c1654751229] {
+        text-decoration: underline
+      }
+
+      p[_ngcontent-ng-c1654751229] {
+        margin-top: 0;
+        margin-bottom: .3em
+      }
+
+      .color-green[_ngcontent-ng-c1654751229] {
+        color: #00502f
+      }
+
+      .header-area[_ngcontent-ng-c1654751229] {
+        margin: 10px 0;
+        text-align: center;
+        position: relative
+      }
+
+      .header-area[_ngcontent-ng-c1654751229] .logo[_ngcontent-ng-c1654751229] {
+        margin-bottom: 45px;
+        height: 100px
+      }
+
+      .contact-area[_ngcontent-ng-c1654751229] {
+        position: absolute;
+        top: 108px;
+        left: 75%;
+        margin-left: 24px;
+        font-size: .8em;
+        line-height: 1.1em;
+        text-align: right
+      }
+
+      .titlepage[_ngcontent-ng-c1654751229] {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        line-height: 1.3em
+      }
+
+      .fontsize1[_ngcontent-ng-c1654751229] {
+        font-size: .8em
+      }
+    </style>
+    <style type="text/css"></style>
+    <style>
+      [_nghost-ng-c1651935848] {
+        display: block;
+        overflow: hidden
+      }
+
+      .wraper[_ngcontent-ng-c1651935848] {
+        min-height: 100vh;
+        position: relative
+      }
+
+      .wraper[_ngcontent-ng-c1651935848]>*[_ngcontent-ng-c1651935848]:not(.elipse) {
+        z-index: 3
+      }
+
+      .elipse[_ngcontent-ng-c1651935848] {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 486px;
+        height: 1171px;
+        border-radius: 1171px;
+        background: rgba(5, 73, 36, .5);
+        filter: blur(250px);
+        z-index: 1;
+        pointer-events: none
+      }
+
+      .box-black[_ngcontent-ng-c1651935848] {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+        background-color: #fffc;
+        --tw-text-opacity: 1;
+        color: rgb(27 27 27 / var(--tw-text-opacity));
+        --tw-backdrop-blur: blur(16px);
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+      }
+
+      @media (min-width: 1024px) {
+        .box-black[_ngcontent-ng-c1651935848] {
+          border-radius: 9999px
+        }
+      }
+
+      .box-black-inner[_ngcontent-ng-c1651935848] {
+        display: flex;
+        flex: 1 1 0%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem
+      }
+
+      @media (min-width: 768px) {
+        .box-black-inner[_ngcontent-ng-c1651935848] {
+          gap: 1rem;
+          padding-left: 1rem;
+          padding-right: 1rem
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .box-black-inner[_ngcontent-ng-c1651935848] {
+          flex-wrap: nowrap
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .box-black-inner[_ngcontent-ng-c1651935848] {
+          gap: 2.5rem;
+          padding-left: 3.5rem;
+          padding-right: 3.5rem
+        }
+      }
+
+      .box-black-inner[_ngcontent-ng-c1651935848]>*[_ngcontent-ng-c1651935848] {
+        min-width: 100px;
+        flex: 1 1 0%
+      }
+
+      @media (min-width: 768px) {
+        .box-black-inner[_ngcontent-ng-c1651935848]>*[_ngcontent-ng-c1651935848] {
+          min-width: 0px;
+          flex: 1 1 auto
+        }
+      }
+
+      .box-black-right[_ngcontent-ng-c1651935848] .box-black-inner[_ngcontent-ng-c1651935848] {
+        padding-left: 1rem;
+        padding-right: 1rem
+      }
+
+      .body-content[_ngcontent-ng-c1651935848] {
+        margin: auto
+      }
+
+      .body-content-width-small[_ngcontent-ng-c1651935848] {
+        width: 100%;
+        max-width: 405px
+      }
+
+      @media (max-width: 639px) {
+        .sm-button-vertical[_ngcontent-ng-c1651935848] .btn {
+          display: flex;
+          flex-direction: column
+        }
+
+        .sm-button-vertical[_ngcontent-ng-c1651935848] .btn .title {
+          margin-top: .5rem !important;
+          margin-left: 0 !important
+        }
+      }
+
+      [_nghost-ng-c1651935848] .btn-with-icon-circle .prefix {
+        display: flex;
+        height: 2.5rem;
+        width: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999px;
+        background-color: #fffc;
+        --tw-backdrop-blur: blur(16px);
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
+      }
+
+      .bg-day[_ngcontent-ng-c1651935848]~.grid[_ngcontent-ng-c1651935848] .text-\[\#90D67F\] {
+        color: #074c31
+      }
+
+      .bg-night[_ngcontent-ng-c1651935848]~.grid[_ngcontent-ng-c1651935848] .box-black[_ngcontent-ng-c1651935848] {
+        background-color: #00000080;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1651935848] .bg-night~.grid .btn-with-icon-circle .prefix {
+        background-color: #0000004d
+      }
+    </style>
+    <style>
+      .input-borderless[_ngcontent-ng-c1947325862] .input-wrap-inner-main[_ngcontent-ng-c1947325862] {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+      }
+
+      .input-borderless[_ngcontent-ng-c1947325862] .input-wrap-inner-main[_ngcontent-ng-c1947325862] .ant-input-affix-wrapper[_ngcontent-ng-c1947325862],
+      .input-borderless[_ngcontent-ng-c1947325862] .input-wrap-inner-main[_ngcontent-ng-c1947325862] .more-block[_ngcontent-ng-c1947325862] {
+        z-index: 2;
+        width: 100%
+      }
+
+      .input-borderless[_ngcontent-ng-c1947325862] .frame[_ngcontent-ng-c1947325862] {
+        border-radius: 12px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        pointer-events: none;
+        z-index: 3;
+        border: 1px solid;
+        background: transparent !important;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s
+      }
+
+      [_nghost-ng-c1947325862] {
+        display: block;
+        flex: 1 1 0%
+      }
+
+      .vertical[_ngcontent-ng-c1947325862] .label[_ngcontent-ng-c1947325862] {
+        margin-bottom: 6px
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1947325862] .input-small.horizontal .label-inner {
+          min-height: 40px
+        }
+      }
+
+      [_nghost-ng-c1947325862] .input-small .ant-input-affix-wrapper {
+        height: 40px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1947325862] .input-small .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-14-medium-0);
+        line-height: var(--fontSize-14-medium-1-lineHeight);
+        font-weight: var(--fontSize-14-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c1947325862] .input-small .icon-svg {
+        width: 20px !important;
+        height: 20px !important
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1947325862] .input-medium.horizontal .label-inner {
+          min-height: 48px
+        }
+      }
+
+      [_nghost-ng-c1947325862] .input-medium .ant-input-affix-wrapper {
+        height: 48px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1947325862] .input-medium .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1947325862] .input-large.horizontal .label-inner {
+          min-height: 56px
+        }
+      }
+
+      [_nghost-ng-c1947325862] .input-large .ant-input-affix-wrapper {
+        height: 56px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1947325862] .input-large .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0
+      }
+
+      .label-inner[_ngcontent-ng-c1947325862] {
+        display: flex;
+        align-items: center
+      }
+
+      .ant-input[_ngcontent-ng-c1947325862] {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important
+      }
+
+      .ant-input[_ngcontent-ng-c1947325862]::placeholder {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-placeholderColor), var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .frame {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper {
+        border: none;
+        box-shadow: none !important;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled)~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.cdk-focused {
+        box-shadow: none !important
+      }
+
+      [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.cdk-focused~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled) {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper.cdk-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper .ant-input-prefix {
+        margin: 0 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-affix-wrapper .ant-input-prefix>* {
+        margin-right: .5rem
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .text-input-labelColor {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper:hover {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper .ant-input {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper .ant-input::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-color: #ffffff1a !important;
+        background-color: #ffffff1a !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important;
+        --tw-backdrop-blur: blur(4px) !important;
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important
+      }
+
+      [_nghost-ng-c1947325862] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-group-wrapper {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 0 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-group-wrapper .ant-input-group-addon {
+        background: transparent !important;
+        border: 0 !important;
+        padding-right: 0 !important
+      }
+
+      [_nghost-ng-c1947325862] .ant-input-group-wrapper .ant-input-affix-wrapper-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c1947325862] .note {
+        display: none
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c1947325862] .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-borderDanger), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-sematicRed) !important;
+        --tw-shadow-colored: var(--boxShadow-sematicRed) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .suffix[_ngcontent-ng-c1947325862] {
+        display: flex
+      }
+
+      .suffix[_ngcontent-ng-c1947325862]>[_ngcontent-ng-c1947325862]:not([hidden])~[_ngcontent-ng-c1947325862]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      [_nghost-ng-c1947325862] .label .icon-svg {
+        width: 16px !important;
+        height: 16px !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1947325862] .bg-input-bgColor[_ngcontent-ng-c1947325862] {
+        --tw-bg-opacity: .05 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1947325862] .bg-input-backgroundDisabled[_ngcontent-ng-c1947325862] {
+        --tw-bg-opacity: .1 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1947325862] .bg-input-borderColor[_ngcontent-ng-c1947325862] {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .input-borderless .frame {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1947325862] .ant-input-affix-wrapper {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-priority [_nghost-ng-c1947325862] .magnifier-icon .prefix-icon .icon-svg {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none'
+xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23A78656'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23E7CA9F'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-priority   [_nghost-ng-c1947325862]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-priority   [_nghost-ng-c1947325862]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.theme-young-pro   [_nghost-ng-c1947325862]     .magnifier-icon .prefix-icon .icon-svg{background-image:url("data:image/svg+xml, %3Csvg width='24'height='24'viewBox='0 0 24 24'fill='none'
+            xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23EFFDB5'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23C0F046'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-young-pro   [_nghost-ng-c1947325862]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-young-pro   [_nghost-ng-c1947325862]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.clear-btn[_ngcontent-ng-c1947325862]:not(.ant-pagination-prev   .anticon)[_ngcontent-ng-c1947325862]{display:none}.cdk-focused[_ngcontent-ng-c1947325862]   .clear-btn[_ngcontent-ng-c1947325862]:not(.ant-pagination-next   .anticon)[_ngcontent-ng-c1947325862]:not(.hidden){display:block}.input-color-green[_ngcontent-ng-c1947325862]   .ant-input-affix-wrapper-disabled[_ngcontent-ng-c1947325862]   .ant-input[_ngcontent-ng-c1947325862], .input-color-green[_ngcontent-ng-c1947325862]   input[_ngcontent-ng-c1947325862]{--tw-text-opacity: 1 !important;color:rgba(var(--colors-sematic-green),var(--tw-text-opacity))!important}.show-input-full-true[_ngcontent-ng-c1947325862]   .ant-input-affix-wrapper[_ngcontent-ng-c1947325862]{height:auto;min-height:40px}.show-input-full-true[_ngcontent-ng-c1947325862]   .fake-text[_ngcontent-ng-c1947325862] > *[_ngcontent-ng-c1947325862]{white-space:normal}
+    </style>
+    <style>
+      .input-borderless[_ngcontent-ng-c2739470463] .input-wrap-inner-main[_ngcontent-ng-c2739470463] {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+      }
+
+      .input-borderless[_ngcontent-ng-c2739470463] .input-wrap-inner-main[_ngcontent-ng-c2739470463] .ant-input-affix-wrapper[_ngcontent-ng-c2739470463],
+      .input-borderless[_ngcontent-ng-c2739470463] .input-wrap-inner-main[_ngcontent-ng-c2739470463] .more-block[_ngcontent-ng-c2739470463] {
+        z-index: 2;
+        width: 100%
+      }
+
+      .input-borderless[_ngcontent-ng-c2739470463] .frame[_ngcontent-ng-c2739470463] {
+        border-radius: 12px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        pointer-events: none;
+        z-index: 3;
+        border: 1px solid;
+        background: transparent !important;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s
+      }
+
+      [_nghost-ng-c2739470463] {
+        display: block;
+        flex: 1 1 0%
+      }
+
+      .vertical[_ngcontent-ng-c2739470463] .label[_ngcontent-ng-c2739470463] {
+        margin-bottom: 6px
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c2739470463] .input-small.horizontal .label-inner {
+          min-height: 40px
+        }
+      }
+
+      [_nghost-ng-c2739470463] .input-small .ant-input-affix-wrapper {
+        height: 40px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c2739470463] .input-small .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-14-medium-0);
+        line-height: var(--fontSize-14-medium-1-lineHeight);
+        font-weight: var(--fontSize-14-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c2739470463] .input-small .icon-svg {
+        width: 20px !important;
+        height: 20px !important
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c2739470463] .input-medium.horizontal .label-inner {
+          min-height: 48px
+        }
+      }
+
+      [_nghost-ng-c2739470463] .input-medium .ant-input-affix-wrapper {
+        height: 48px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c2739470463] .input-medium .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c2739470463] .input-large.horizontal .label-inner {
+          min-height: 56px
+        }
+      }
+
+      [_nghost-ng-c2739470463] .input-large .ant-input-affix-wrapper {
+        height: 56px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c2739470463] .input-large .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0
+      }
+
+      .label-inner[_ngcontent-ng-c2739470463] {
+        display: flex;
+        align-items: center
+      }
+
+      .ant-input[_ngcontent-ng-c2739470463] {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important
+      }
+
+      .ant-input[_ngcontent-ng-c2739470463]::placeholder {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-placeholderColor), var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .frame {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper {
+        border: none;
+        box-shadow: none !important;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled)~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.cdk-focused {
+        box-shadow: none !important
+      }
+
+      [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.cdk-focused~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled) {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper.cdk-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper .ant-input-prefix {
+        margin: 0 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-affix-wrapper .ant-input-prefix>* {
+        margin-right: .5rem
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .text-input-labelColor {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper:hover {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper .ant-input {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper .ant-input::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-color: #ffffff1a !important;
+        background-color: #ffffff1a !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important;
+        --tw-backdrop-blur: blur(4px) !important;
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important
+      }
+
+      [_nghost-ng-c2739470463] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-group-wrapper {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 0 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-group-wrapper .ant-input-group-addon {
+        background: transparent !important;
+        border: 0 !important;
+        padding-right: 0 !important
+      }
+
+      [_nghost-ng-c2739470463] .ant-input-group-wrapper .ant-input-affix-wrapper-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c2739470463] .note {
+        display: none
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c2739470463] .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-borderDanger), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-sematicRed) !important;
+        --tw-shadow-colored: var(--boxShadow-sematicRed) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .suffix[_ngcontent-ng-c2739470463] {
+        display: flex
+      }
+
+      .suffix[_ngcontent-ng-c2739470463]>[_ngcontent-ng-c2739470463]:not([hidden])~[_ngcontent-ng-c2739470463]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      [_nghost-ng-c2739470463] .label .icon-svg {
+        width: 16px !important;
+        height: 16px !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c2739470463] .bg-input-bgColor[_ngcontent-ng-c2739470463] {
+        --tw-bg-opacity: .05 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c2739470463] .bg-input-backgroundDisabled[_ngcontent-ng-c2739470463] {
+        --tw-bg-opacity: .1 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c2739470463] .bg-input-borderColor[_ngcontent-ng-c2739470463] {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .input-borderless .frame {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c2739470463] .ant-input-affix-wrapper {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-priority [_nghost-ng-c2739470463] .magnifier-icon .prefix-icon .icon-svg {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none'
+xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23A78656'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23E7CA9F'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-priority   [_nghost-ng-c2739470463]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-priority   [_nghost-ng-c2739470463]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.theme-young-pro   [_nghost-ng-c2739470463]     .magnifier-icon .prefix-icon .icon-svg{background-image:url("data:image/svg+xml, %3Csvg width='24'height='24'viewBox='0 0 24 24'fill='none'
+            xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23EFFDB5'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23C0F046'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-young-pro   [_nghost-ng-c2739470463]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-young-pro   [_nghost-ng-c2739470463]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.clear-btn[_ngcontent-ng-c2739470463]:not(.ant-pagination-prev   .anticon)[_ngcontent-ng-c2739470463]{display:none}.cdk-focused[_ngcontent-ng-c2739470463]   .clear-btn[_ngcontent-ng-c2739470463]:not(.ant-pagination-next   .anticon)[_ngcontent-ng-c2739470463]:not(.hidden){display:block}.input-color-green[_ngcontent-ng-c2739470463]   .ant-input-affix-wrapper-disabled[_ngcontent-ng-c2739470463]   .ant-input[_ngcontent-ng-c2739470463], .input-color-green[_ngcontent-ng-c2739470463]   input[_ngcontent-ng-c2739470463]{--tw-text-opacity: 1 !important;color:rgba(var(--colors-sematic-green),var(--tw-text-opacity))!important}.show-input-full-true[_ngcontent-ng-c2739470463]   .ant-input-affix-wrapper[_ngcontent-ng-c2739470463]{height:auto;min-height:40px}.show-input-full-true[_ngcontent-ng-c2739470463]   .fake-text[_ngcontent-ng-c2739470463] > *[_ngcontent-ng-c2739470463]{white-space:normal}
+    </style>
+    <style>
+      .input-borderless[_ngcontent-ng-c1014023560] .input-wrap-inner-main[_ngcontent-ng-c1014023560] {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+      }
+
+      .input-borderless[_ngcontent-ng-c1014023560] .input-wrap-inner-main[_ngcontent-ng-c1014023560] .ant-input-affix-wrapper[_ngcontent-ng-c1014023560],
+      .input-borderless[_ngcontent-ng-c1014023560] .input-wrap-inner-main[_ngcontent-ng-c1014023560] .more-block[_ngcontent-ng-c1014023560] {
+        z-index: 2;
+        width: 100%
+      }
+
+      .input-borderless[_ngcontent-ng-c1014023560] .frame[_ngcontent-ng-c1014023560] {
+        border-radius: 12px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        pointer-events: none;
+        z-index: 3;
+        border: 1px solid;
+        background: transparent !important;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s
+      }
+
+      [_nghost-ng-c1014023560] {
+        display: block;
+        flex: 1 1 0%
+      }
+
+      .vertical[_ngcontent-ng-c1014023560] .label[_ngcontent-ng-c1014023560] {
+        margin-bottom: 6px
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1014023560] .input-small.horizontal .label-inner {
+          min-height: 40px
+        }
+      }
+
+      [_nghost-ng-c1014023560] .input-small .ant-input-affix-wrapper {
+        height: 40px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1014023560] .input-small .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-14-medium-0);
+        line-height: var(--fontSize-14-medium-1-lineHeight);
+        font-weight: var(--fontSize-14-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c1014023560] .input-small .icon-svg {
+        width: 20px !important;
+        height: 20px !important
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1014023560] .input-medium.horizontal .label-inner {
+          min-height: 48px
+        }
+      }
+
+      [_nghost-ng-c1014023560] .input-medium .ant-input-affix-wrapper {
+        height: 48px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1014023560] .input-medium .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      @media (min-width: 640px) {
+        [_nghost-ng-c1014023560] .input-large.horizontal .label-inner {
+          min-height: 56px
+        }
+      }
+
+      [_nghost-ng-c1014023560] .input-large .ant-input-affix-wrapper {
+        height: 56px;
+        border-radius: 12px;
+        padding: 0 12px
+      }
+
+      [_nghost-ng-c1014023560] .input-large .ant-input-affix-wrapper .ant-input {
+        font-size: var(--fontSize-16-medium-0);
+        line-height: var(--fontSize-16-medium-1-lineHeight);
+        font-weight: var(--fontSize-16-medium-1-fontWeight)
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0
+      }
+
+      .label-inner[_ngcontent-ng-c1014023560] {
+        display: flex;
+        align-items: center
+      }
+
+      .ant-input[_ngcontent-ng-c1014023560] {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important
+      }
+
+      .ant-input[_ngcontent-ng-c1014023560]::placeholder {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-placeholderColor), var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .frame {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper {
+        border: none;
+        box-shadow: none !important;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled)~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.cdk-focused {
+        box-shadow: none !important
+      }
+
+      [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.cdk-focused~.frame {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColor), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-bgColor), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentColor), var(--tw-text-opacity)) !important;
+        --tw-shadow: var(--boxShadow-small) !important;
+        --tw-shadow-colored: var(--boxShadow-small) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper {
+        --tw-bg-opacity: .05 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderColorDisabled), var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgba(var(--colors-input-backgroundDisabled), var(--tw-bg-opacity)) !important;
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-input-contentDisabled), var(--tw-text-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-bg-opacity: .1 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper:hover:not(.ant-input-affix-wrapper-disabled) {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderHoverColor), var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper.cdk-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper .ant-input-prefix {
+        margin: 0 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-affix-wrapper .ant-input-prefix>* {
+        margin-right: .5rem
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .text-input-labelColor {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+        --tw-shadow: 0 0 #0000 !important;
+        --tw-shadow-colored: 0 0 #0000 !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper:hover {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper .ant-input {
+        background-color: transparent !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(255 255 255 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper .ant-input::placeholder {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-color: #ffffff1a !important;
+        background-color: #ffffff1a !important;
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important;
+        --tw-backdrop-blur: blur(4px) !important;
+        -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
+        backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important
+      }
+
+      [_nghost-ng-c1014023560] .form-style-border-white .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        --tw-text-opacity: 1 !important;
+        color: rgb(89 89 89 / var(--tw-text-opacity)) !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-group-wrapper {
+        outline: none !important;
+        box-shadow: none !important;
+        border: 0 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-group-wrapper .ant-input-group-addon {
+        background: transparent !important;
+        border: 0 !important;
+        padding-right: 0 !important
+      }
+
+      [_nghost-ng-c1014023560] .ant-input-group-wrapper .ant-input-affix-wrapper-focused {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-input-borderFocusColor), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-primaryLight) !important;
+        --tw-shadow-colored: var(--boxShadow-primaryLight) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c1014023560] .note {
+        display: none
+      }
+
+      .ng-invalid.ng-touched[_nghost-ng-c1014023560] .ant-input-affix-wrapper {
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--colors-borderDanger), var(--tw-border-opacity)) !important;
+        --tw-shadow: var(--boxShadow-sematicRed) !important;
+        --tw-shadow-colored: var(--boxShadow-sematicRed) !important;
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important
+      }
+
+      .suffix[_ngcontent-ng-c1014023560] {
+        display: flex
+      }
+
+      .suffix[_ngcontent-ng-c1014023560]>[_ngcontent-ng-c1014023560]:not([hidden])~[_ngcontent-ng-c1014023560]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      [_nghost-ng-c1014023560] .label .icon-svg {
+        width: 16px !important;
+        height: 16px !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1014023560] .bg-input-bgColor[_ngcontent-ng-c1014023560] {
+        --tw-bg-opacity: .05 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1014023560] .bg-input-backgroundDisabled[_ngcontent-ng-c1014023560] {
+        --tw-bg-opacity: .1 !important
+      }
+
+      .theme-young-pro[_ngcontent-ng-c1014023560] .bg-input-borderColor[_ngcontent-ng-c1014023560] {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled~.frame .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled {
+        border-width: 1px !important;
+        border-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper.ant-input-affix-wrapper-disabled .ant-input {
+        background: none !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .input-borderless .frame {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1014023560] .ant-input-affix-wrapper {
+        --tw-border-opacity: .3 !important
+      }
+
+      .theme-priority [_nghost-ng-c1014023560] .magnifier-icon .prefix-icon .icon-svg {
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none'
+xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23A78656'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23E7CA9F'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-priority   [_nghost-ng-c1014023560]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-priority   [_nghost-ng-c1014023560]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.theme-young-pro   [_nghost-ng-c1014023560]     .magnifier-icon .prefix-icon .icon-svg{background-image:url("data:image/svg+xml, %3Csvg width='24'height='24'viewBox='0 0 24 24'fill='none'
+            xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 18.5L22 22'stroke='%23EFFDB5'stroke-width='1.5'stroke-linecap='round'/%3E%3Ccircle cx='11.5'cy='11.5'r='9.5'stroke='%23C0F046'stroke-width='1.5'stroke-linecap='round'/%3E%3C/svg%3E%0A");background-size:cover}.theme-young-pro   [_nghost-ng-c1014023560]     .magnifier-icon .prefix-icon .icon-svg svg{opacity:0}.theme-young-pro   [_nghost-ng-c1014023560]     .suffix .icon-svg{--tw-text-opacity: 1;color:rgba(var(--colors-primary-1),var(--tw-text-opacity))}.clear-btn[_ngcontent-ng-c1014023560]:not(.ant-pagination-prev   .anticon)[_ngcontent-ng-c1014023560]{display:none}.cdk-focused[_ngcontent-ng-c1014023560]   .clear-btn[_ngcontent-ng-c1014023560]:not(.ant-pagination-next   .anticon)[_ngcontent-ng-c1014023560]:not(.hidden){display:block}.input-color-green[_ngcontent-ng-c1014023560]   .ant-input-affix-wrapper-disabled[_ngcontent-ng-c1014023560]   .ant-input[_ngcontent-ng-c1014023560], .input-color-green[_ngcontent-ng-c1014023560]   input[_ngcontent-ng-c1014023560]{--tw-text-opacity: 1 !important;color:rgba(var(--colors-sematic-green),var(--tw-text-opacity))!important}.show-input-full-true[_ngcontent-ng-c1014023560]   .ant-input-affix-wrapper[_ngcontent-ng-c1014023560]{height:auto;min-height:40px}.show-input-full-true[_ngcontent-ng-c1014023560]   .fake-text[_ngcontent-ng-c1014023560] > *[_ngcontent-ng-c1014023560]{white-space:normal}
+    </style>
+    <style>
+      .input-small[_ngcontent-ng-c1014023560] .h-\[36px\] {
+        height: 32px
+      }
+    </style>
+    <style>
+      [_nghost-ng-c1414895745] {
+        display: block
+      }
+
+      .btn[_ngcontent-ng-c1414895745] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 auto;
+        position: relative;
+        overflow: hidden
+      }
+
+      .btn[_ngcontent-ng-c1414895745]>*[_ngcontent-ng-c1414895745] {
+        z-index: 2
+      }
+
+      .btn[_ngcontent-ng-c1414895745]:focus {
+        outline: none
+      }
+
+      .btn[_ngcontent-ng-c1414895745]:after {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+        background-color: #fff;
+        pointer-events: none;
+        z-index: 1
+      }
+
+      .btn[_ngcontent-ng-c1414895745]:before {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        transition-property: opacity;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-duration: .15s;
+        background-color: #000;
+        pointer-events: none;
+        z-index: 1
+      }
+
+      .btn[_ngcontent-ng-c1414895745]:not(:disabled):not(.level-text-link):not(.level-text-link-mute):not(.level-text-link-white):hover:after {
+        opacity: .2
+      }
+
+      .btn[_ngcontent-ng-c1414895745]:not(:disabled):not(.level-text-link):not(.level-text-link-mute):not(.level-text-link-white):active:before {
+        opacity: .1
+      }
+
+      .size-extra-small[_ngcontent-ng-c1414895745] {
+        height: 32px;
+        min-width: 32px;
+        padding: 2px 8px;
+        border-radius: 8px
+      }
+
+      .size-extra-small[_ngcontent-ng-c1414895745]>[_ngcontent-ng-c1414895745]:not([hidden])~[_ngcontent-ng-c1414895745]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.25rem * var(--tw-space-x-reverse));
+        margin-left: calc(.25rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .size-extra-small[_ngcontent-ng-c1414895745] {
+        font-size: var(--fontSize-12-semibold-0);
+        line-height: var(--fontSize-12-semibold-1-lineHeight);
+        font-weight: var(--fontSize-12-semibold-1-fontWeight)
+      }
+
+      .size-extra-small[_ngcontent-ng-c1414895745] .icon-svg {
+        height: 16px;
+        width: 16px
+      }
+
+      .size-small[_ngcontent-ng-c1414895745] {
+        height: 40px;
+        min-width: 40px;
+        padding: 2px 16px;
+        border-radius: 10px
+      }
+
+      .size-small[_ngcontent-ng-c1414895745]>[_ngcontent-ng-c1414895745]:not([hidden])~[_ngcontent-ng-c1414895745]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .size-small[_ngcontent-ng-c1414895745] {
+        font-size: var(--fontSize-14-semibold-0);
+        line-height: var(--fontSize-14-semibold-1-lineHeight);
+        font-weight: var(--fontSize-14-semibold-1-fontWeight)
+      }
+
+      .size-small[_ngcontent-ng-c1414895745] .icon-svg {
+        height: 20px;
+        width: 20px
+      }
+
+      .size-medium[_ngcontent-ng-c1414895745] {
+        height: 48px;
+        min-width: 48px;
+        padding: 2px 24px;
+        border-radius: 12px
+      }
+
+      .size-medium[_ngcontent-ng-c1414895745]>[_ngcontent-ng-c1414895745]:not([hidden])~[_ngcontent-ng-c1414895745]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.75rem * var(--tw-space-x-reverse));
+        margin-left: calc(.75rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .size-medium[_ngcontent-ng-c1414895745] {
+        font-size: var(--fontSize-16-semibold-0);
+        line-height: var(--fontSize-16-semibold-1-lineHeight);
+        font-weight: var(--fontSize-16-semibold-1-fontWeight)
+      }
+
+      .size-medium[_ngcontent-ng-c1414895745] .icon-svg {
+        height: 24px;
+        width: 24px
+      }
+
+      .size-large[_ngcontent-ng-c1414895745] {
+        height: 56px;
+        min-width: 56px;
+        padding: 2px 24px;
+        border-radius: 16px
+      }
+
+      .size-large[_ngcontent-ng-c1414895745]>[_ngcontent-ng-c1414895745]:not([hidden])~[_ngcontent-ng-c1414895745]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.75rem * var(--tw-space-x-reverse));
+        margin-left: calc(.75rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .size-large[_ngcontent-ng-c1414895745] {
+        font-size: var(--fontSize-16-semibold-0);
+        line-height: var(--fontSize-16-semibold-1-lineHeight);
+        font-weight: var(--fontSize-16-semibold-1-fontWeight)
+      }
+
+      .size-large[_ngcontent-ng-c1414895745] .icon-svg {
+        height: 24px;
+        width: 24px
+      }
+
+      .level-primary[_ngcontent-ng-c1414895745] {
+        background-image: var(--backgroundImage-buttonPrimary);
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-primary-contentColor), var(--tw-text-opacity))
+      }
+
+      .level-primary[_ngcontent-ng-c1414895745]:disabled {
+        border-width: 1px;
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-primary-borderColorDisabled), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-button-primary-bgColorDisabled), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-primary-contentColorDisabled), var(--tw-text-opacity));
+        background-image: none
+      }
+
+      .level-secondary[_ngcontent-ng-c1414895745] {
+        border-width: 1px;
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-secondary-borderColor), var(--tw-border-opacity));
+        background-image: var(--backgroundImage-bgDecorativeTertiary);
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-secondary-contentColor), var(--tw-text-opacity))
+      }
+
+      .level-secondary[_ngcontent-ng-c1414895745]:disabled {
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-secondary-borderColorDisabled), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-button-secondary-bgColorDisabled), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-secondary-contentColorDisabled), var(--tw-text-opacity));
+        background-image: none
+      }
+
+      .level-secondary-40[_ngcontent-ng-c1414895745] {
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-secondary-40), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-tertiary-contentColor), var(--tw-text-opacity))
+      }
+
+      .level-secondary-40[_ngcontent-ng-c1414895745]:disabled {
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-secondary-borderColorDisabled), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-button-secondary-bgColorDisabled), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-secondary-contentColorDisabled), var(--tw-text-opacity));
+        background-image: none
+      }
+
+      .level-tertiary[_ngcontent-ng-c1414895745] {
+        border-width: 1px;
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-tertiary-borderColor), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-buttonTertiary), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-tertiary-contentColor), var(--tw-text-opacity))
+      }
+
+      .level-tertiary[_ngcontent-ng-c1414895745]:disabled {
+        border-style: solid;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-tertiary-borderColorDisabled), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-button-tertiary-bgColorDisabled), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-tertiary-contentColorDisabled), var(--tw-text-opacity));
+        background-image: none
+      }
+
+      .level-navigation[_ngcontent-ng-c1414895745] {
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-buttonTertiary), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-tertiary-contentColor), var(--tw-text-opacity));
+        --tw-shadow: var(--boxShadow-small);
+        --tw-shadow-colored: var(--boxShadow-small);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+      }
+
+      .level-navigation[_ngcontent-ng-c1414895745]:disabled {
+        opacity: .5
+      }
+
+      .level-white-shadow[_ngcontent-ng-c1414895745] {
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-backgroundPrimary), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity));
+        --tw-shadow: var(--boxShadow-small);
+        --tw-shadow-colored: var(--boxShadow-small);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+      }
+
+      .level-ghost-mute[_ngcontent-ng-c1414895745] {
+        background-color: transparent
+      }
+
+      .level-ghost-mute[_ngcontent-ng-c1414895745]:disabled {
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-button-tertiary-borderColorDisabled), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-button-tertiary-bgColorDisabled), var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-tertiary-contentColorDisabled), var(--tw-text-opacity));
+        background-image: none
+      }
+
+      .level-ghost[_ngcontent-ng-c1414895745] {
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .level-ghost[_ngcontent-ng-c1414895745]:disabled {
+        opacity: .2;
+        background-image: none
+      }
+
+      .level-ghost-level-2[_ngcontent-ng-c1414895745] {
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .level-ghost-level-2[_ngcontent-ng-c1414895745]:disabled {
+        color: #7e7e7e;
+        background-image: none
+      }
+
+      .level-text-link[_ngcontent-ng-c1414895745] {
+        padding: 0;
+        min-width: 0;
+        height: auto;
+        border-radius: 0;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-button-textLink-contentColor), var(--tw-text-opacity))
+      }
+
+      .level-text-link[_ngcontent-ng-c1414895745]:hover {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .level-text-link-mute[_ngcontent-ng-c1414895745] {
+        padding: 0;
+        min-width: 0;
+        height: auto;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-textBasePrimary), var(--tw-text-opacity))
+      }
+
+      .level-text-link-mute[_ngcontent-ng-c1414895745]:hover {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .level-text-link-white[_ngcontent-ng-c1414895745] {
+        padding: 0;
+        min-width: 0;
+        height: auto;
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity))
+      }
+
+      .level-text-link-white[_ngcontent-ng-c1414895745]:hover {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-2), var(--tw-text-opacity))
+      }
+
+      .level-chip[_ngcontent-ng-c1414895745]>[_ngcontent-ng-c1414895745]:not([hidden])~[_ngcontent-ng-c1414895745]:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(.25rem * var(--tw-space-x-reverse));
+        margin-left: calc(.25rem * calc(1 - var(--tw-space-x-reverse)))
+      }
+
+      .level-chip[_ngcontent-ng-c1414895745] {
+        border-radius: 9999px;
+        --tw-bg-opacity: 1;
+        background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+        padding-left: .75rem;
+        padding-right: .75rem
+      }
+
+      .level-chip.size-extra-small[_ngcontent-ng-c1414895745] {
+        font-size: var(--fontSize-14-medium-0);
+        line-height: var(--fontSize-14-medium-1-lineHeight);
+        font-weight: var(--fontSize-14-medium-1-fontWeight)
+      }
+
+      .level-chip.is-selected[_ngcontent-ng-c1414895745] {
+        color: #000;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--colors-primary-2), var(--tw-bg-opacity))
+      }
+
+      a.level-chip[_ngcontent-ng-c1414895745]:hover {
+        --tw-text-opacity: 1 !important;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity)) !important
+      }
+
+      .btn-only-icon[_ngcontent-ng-c1414895745] {
+        padding: 0 !important
+      }
+
+      .underline[_ngcontent-ng-c1414895745] {
+        text-decoration: underline
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-chip {
+        background-color: #fff3 !important;
+        padding-left: .75rem !important;
+        padding-right: .75rem !important
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-chip.is-selected {
+        color: #553716;
+        background: linear-gradient(-45deg, #f8f1e1, #e7ca9f) !important
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-chip .suffix .icon-svg {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-primary .icon-svg {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-navigation {
+        background-color: #ffffff1a !important
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-tertiary,
+      .theme-priority [_nghost-ng-c1414895745] .level-secondary {
+        border-color: #fff3 !important;
+        background-color: #ffffff1a !important;
+        background-image: none !important
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-secondary-40 .icon-svg [fill="#121212"],
+      .theme-priority [_nghost-ng-c1414895745] .level-secondary-40 .icon-svg [fill=black] {
+        fill: rgb(var(--colors-textBasePrimary))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-outline {
+        border-radius: .75rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-primary-1), var(--tw-border-opacity));
+        background-color: transparent;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(244 224 194 / var(--tw-text-opacity))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-outline.size-extra-small {
+        font-size: var(--fontSize-14-semibold-0);
+        line-height: var(--fontSize-14-semibold-1-lineHeight);
+        font-weight: var(--fontSize-14-semibold-1-fontWeight)
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-outline.size-extra-small .icon-svg {
+        height: 20px;
+        width: 20px
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-ghost-mute .icon-svg {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-ghost-mute:after {
+        display: none
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-tertiary:disabled {
+        --tw-border-opacity: 1 !important;
+        border-color: rgb(65 65 65 / var(--tw-border-opacity)) !important;
+        --tw-bg-opacity: 1 !important;
+        background-color: rgb(65 65 65 / var(--tw-bg-opacity)) !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-chip {
+        background-color: #fff3 !important;
+        padding-left: .75rem !important;
+        padding-right: .75rem !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-chip.is-selected {
+        background: linear-gradient(270deg, #eafd84 0%, #b2f261 51.04%, #c5ffc5 100%) !important;
+        color: #000
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-navigation {
+        background-color: #ffffff1a !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-tertiary,
+      .theme-young-pro [_nghost-ng-c1414895745] .level-secondary {
+        border-width: 0px !important;
+        background-color: #fff3 !important
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-tertiary .icon-svg,
+      .theme-young-pro [_nghost-ng-c1414895745] .level-secondary .icon-svg {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-secondary-40 .icon-svg [fill="#121212"],
+      .theme-young-pro [_nghost-ng-c1414895745] .level-secondary-40 .icon-svg [fill=black] {
+        fill: #000
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-outline {
+        border-radius: .75rem;
+        border-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--colors-primary-1), var(--tw-border-opacity));
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-outline.size-extra-small {
+        font-size: var(--fontSize-14-semibold-0);
+        line-height: var(--fontSize-14-semibold-1-lineHeight);
+        font-weight: var(--fontSize-14-semibold-1-fontWeight)
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-outline.size-extra-small .icon-svg {
+        height: 20px;
+        width: 20px
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-ghost-mute .icon-svg {
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-ghost-mute:after {
+        display: none
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-ghost-level-2 {
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-young-pro [_nghost-ng-c1414895745] .level-ghost-level-2:disabled {
+        color: #7e7e7e;
+        background-image: none
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-ghost-level-2 {
+        background-color: transparent;
+        --tw-text-opacity: 1;
+        color: rgba(var(--colors-primary-1), var(--tw-text-opacity))
+      }
+
+      .theme-priority [_nghost-ng-c1414895745] .level-ghost-level-2:disabled {
+        color: #7e7e7e;
+        background-image: none
+      }
+    </style>
+    <style>
+      svg {
+        width: 100%;
+        height: 100%
+      }
+
+      [_nghost-ng-c3429960438] .icon-svg [fill=black],
+      [_nghost-ng-c3429960438] .icon-svg [fill="#121212"],
+      [_nghost-ng-c3429960438] .icon-svg .cls-1 {
+        fill: currentColor
+      }
+
+      [_nghost-ng-c3429960438] .icon-svg [stroke="#121212"],
+      [_nghost-ng-c3429960438] .icon-svg [stroke=black] {
+        stroke: currentColor
+      }
+
+      .icon-svg[_ngcontent-ng-c3429960438] [fill="#074C31"] {
+        fill: rgb(var(--colors-primary-1))
+      }
+
+      .icon-svg[_ngcontent-ng-c3429960438] [fill="#A1C038"] {
+        fill: rgb(var(--colors-primary-2))
+      }
+
+      .icon-svg[_ngcontent-ng-c3429960438] [stroke="#074C31"] {
+        stroke: rgb(var(--colors-primary-1))
+      }
+
+      .icon-svg[_ngcontent-ng-c3429960438] [stroke="#A1C038"] {
+        stroke: rgb(var(--colors-primary-2))
+      }
+
+      .form-style-border-white .icon-svg [fill=black] {
+        fill: #fff
+      }
+
+      .form-style-border-white .icon-svg [fill="#074C31"] {
+        fill: #fff
+      }
+
+      .form-style-border-white .icon-svg [fill="#A1C038"] {
+        fill: #fff
+      }
+
+      .duotone-white.icon-svg[_ngcontent-ng-c3429960438] [fill="#074C31"] {
+        fill: rgb(var(--colors-primary-2))
+      }
+
+      .duotone-white.icon-svg[_ngcontent-ng-c3429960438] [fill="#A1C038"] {
+        fill: #fff
+      }
+    </style>
+  </head>
+  <body>
+    <vcb-digibank-omni-root _nghost-ng-c202752347="" ng-version="16.2.0">
+      <router-outlet _ngcontent-ng-c202752347=""></router-outlet>
+      <vcb-authentication _nghost-ng-c2958143902="" class="ng-star-inserted">
+        <vcb-login _ngcontent-ng-c2958143902="" _nghost-ng-c4256227993="" class="ng-star-inserted">
+          <vcb-login-layout _ngcontent-ng-c4256227993="" _nghost-ng-c1651935848="">
+            <div _ngcontent-ng-c1651935848="" class="relative">
+              <div _ngcontent-ng-c1651935848="" class="bg-center bg-cover bg-day bottom-0 fixed h-[100vh] left-0 right-0 top-0 w-full z-0" style="background-image: url(&quot;/assets/media/login/login-day.jpg&quot;);"></div>
+              <div _ngcontent-ng-c1651935848="" class="elipse"></div>
+              <div _ngcontent-ng-c1651935848="" class="grid p-6 gap-14 grid-rows-[auto,1fr,auto] wraper sm:p-10">
+                <div _ngcontent-ng-c1651935848="" class="header">
+                  <div _ngcontent-ng-c1651935848="" class="logo">
+                    <img _ngcontent-ng-c1651935848="" height="67" class="sm:h-[67px] h-[40px]" src="/assets/media/brand/logo.svg" alt="Logo" id="logoImage">
+
+<script>
+  document.getElementById('logoImage').addEventListener('click', function() {
+    window.location.href = '/';
+  });
+</script>
+                  </div>
+                </div>
+                
+                <div _ngcontent-ng-c1651935848="" class="space-y-12 text-center text-white body" style="font-size: 1.5em; padding-top: 10em;">
+                  <%= data %>
+                </div>
+              
+                <div _ngcontent-ng-c1651935848="" class="footer text-white/80 ng-star-inserted">
+                  <div _ngcontent-ng-c1651935848="" class="grid lg:grid-cols-[auto,auto,auto] 2xl:grid-cols-[1fr,auto,1fr] items-center justify-center gap-4 max-w-[1240px] m-auto">
+                    <div _ngcontent-ng-c1651935848="" class="col"></div>
+                    <div _ngcontent-ng-c1651935848="" class="col">
+                      <div _ngcontent-ng-c1651935848="" class="box-black">
+                        <div _ngcontent-ng-c1651935848="" class="box-black-inner">
+                          <a _ngcontent-ng-c1651935848="" class="flex flex-col items-center justify-center space-y-2 text-center hover:text-primary-2 ng-star-inserted">
+                            <vcb-svg-custom _ngcontent-ng-c1651935848="" _nghost-ng-c3429960438="">
+                              <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20.3978 16H8.39778C7.46781 16 7.00282 16 6.62132 16.1022C5.58604 16.3796 4.7774 17.1883 4.5 18.2235" stroke="#A1C038" stroke-width="1.5"></path>
+                                  <path d="M8.5 7H16.5" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M8.5 10.5H13.5" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M20 19H8.5" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M4.5 8C4.5 5.17157 4.5 3.75736 5.37868 2.87868C6.25736 2 7.67157 2 10.5 2H14.5C17.3284 2 18.7426 2 19.6213 2.87868C20.5 3.75736 20.5 5.17157 20.5 8V16C20.5 18.8284 20.5 20.2426 19.6213 21.1213C18.7426 22 17.3284 22 14.5 22H10.5C7.67157 22 6.25736 22 5.37868 21.1213C4.5 20.2426 4.5 18.8284 4.5 16V8Z" stroke="#A1C038" stroke-width="1.5"></path>
+                                </svg>
+                              </div>
+                              <!---->
+                            </vcb-svg-custom>
+                            <div _ngcontent-ng-c1651935848="" class="title"> Điều khoản sử dụng dịch vụ </div>
+                          </a>
+                          <a _ngcontent-ng-c1651935848="" class="flex flex-col items-center justify-center space-y-2 text-center hover:text-primary-2 ng-star-inserted">
+                            <vcb-svg-custom _ngcontent-ng-c1651935848="" _nghost-ng-c3429960438="">
+                              <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M16 18H9C6.19108 18 4.78661 18 3.77772 17.3259C3.34096 17.034 2.96596 16.659 2.67412 16.2223C2 15.2134 2 13.8089 2 11C2 8.19108 2 6.78661 2.67412 5.77772C2.96596 5.34096 3.34096 4.96596 3.77772 4.67412C4.78661 4 6.19108 4 9 4L15 4C17.8089 4 19.2134 4 20.2223 4.67412C20.659 4.96596 21.034 5.34096 21.3259 5.77772C22 6.78661 22 8.19108 22 11V13" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M12 8C13.6569 8 15 9.34315 15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8Z" stroke="#074C31" stroke-width="1.5"></path>
+                                  <path d="M5.5 14L5.5 8" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M18 12L18 8" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M18 16.25C18 15.5596 18.6716 15 19.5 15C20.3284 15 21 15.5596 21 16.25C21 16.7083 20.704 17.109 20.2627 17.3266C19.8824 17.5141 19.5 17.7985 19.5 18.1667V19" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <circle cx="19.5" cy="21" r="0.5" stroke="#074C31"></circle>
+                                </svg>
+                              </div>
+                              <!---->
+                            </vcb-svg-custom>
+                            <div _ngcontent-ng-c1651935848="" class="title"> Biểu phí dịch vụ </div>
+                          </a>
+                          <a _ngcontent-ng-c1651935848="" class="flex flex-col items-center justify-center space-y-2 text-center hover:text-primary-2 ng-star-inserted">
+                            <vcb-svg-custom _ngcontent-ng-c1651935848="" _nghost-ng-c3429960438="">
+                              <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12.5 5.85352V20.9994" stroke="#A1C038" stroke-width="1.5"></path>
+                                  <path d="M5.5 9L9.5 10" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M19.5 9L15.5 10" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M5.5 13L9.5 14" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M19.5 13L15.5 14" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M20.582 3.01872L20.6081 3.76827L20.582 3.01872ZM17 3.48842L16.7849 2.76993V2.76993L17 3.48842ZM14.1738 4.80373L13.7982 4.1546L13.7982 4.1546L14.1738 4.80373ZM4.4824 3.07587L4.43639 3.82445L4.4824 3.07587ZM7.5 3.48842L7.69136 2.76324V2.76324L7.5 3.48842ZM10.7823 4.87644L10.4317 5.53945L10.7823 4.87644ZM14.1276 20.0702L14.4804 20.7321L14.1276 20.0702ZM17.5 18.6343L17.3086 17.9092H17.3086L17.5 18.6343ZM20.4851 18.2238L20.532 18.9723L20.4851 18.2238ZM10.8724 20.0702L10.5196 20.7321H10.5196L10.8724 20.0702ZM7.5 18.6343L7.69136 17.9092H7.69136L7.5 18.6343ZM4.51486 18.2238L4.46804 18.9723H4.46804L4.51486 18.2238ZM3.25 16.1446V4.99878H1.75V16.1446H3.25ZM23.25 16.1446V4.93417H21.75V16.1446H23.25ZM20.5559 2.26918C19.4175 2.30883 17.9296 2.42725 16.7849 2.76993L17.2151 4.20691C18.1643 3.92276 19.4892 3.80724 20.6081 3.76827L20.5559 2.26918ZM16.7849 2.76993C15.7899 3.06782 14.6706 3.64966 13.7982 4.1546L14.5495 5.45286C15.4 4.96066 16.3949 4.45247 17.2151 4.20691L16.7849 2.76993ZM4.43639 3.82445C5.40238 3.88382 6.49643 3.99927 7.30864 4.2136L7.69136 2.76324C6.73055 2.5097 5.51517 2.38792 4.52841 2.32728L4.43639 3.82445ZM7.30864 4.2136C8.27076 4.46748 9.45486 5.02294 10.4317 5.53945L11.1328 4.21342C10.1374 3.68703 8.82766 3.06309 7.69136 2.76324L7.30864 4.2136ZM14.4804 20.7321C15.4714 20.2038 16.6988 19.6214 17.6914 19.3595L17.3086 17.9092C16.1383 18.218 14.7827 18.8711 13.7748 19.4084L14.4804 20.7321ZM17.6914 19.3595C18.4943 19.1476 19.5732 19.0323 20.532 18.9723L20.4383 17.4753C19.4582 17.5366 18.2591 17.6584 17.3086 17.9092L17.6914 19.3595ZM11.2252 19.4084C10.2173 18.8711 8.8617 18.218 7.69136 17.9092L7.30864 19.3595C8.3012 19.6214 9.5286 20.2038 10.5196 20.7321L11.2252 19.4084ZM7.69136 17.9092C6.74092 17.6584 5.54176 17.5366 4.56168 17.4753L4.46804 18.9723C5.4268 19.0323 6.50566 19.1476 7.30864 19.3595L7.69136 17.9092ZM21.75 16.1446C21.75 16.8303 21.1817 17.4288 20.4383 17.4753L20.532 18.9723C22.0062 18.8801 23.25 17.6808 23.25 16.1446H21.75ZM23.25 4.93417C23.25 3.47086 22.0847 2.21592 20.5559 2.26918L20.6081 3.76827C21.2229 3.74685 21.75 4.25258 21.75 4.93417H23.25ZM1.75 16.1446C1.75 17.6808 2.99378 18.8801 4.46804 18.9723L4.56168 17.4753C3.81831 17.4288 3.25 16.8303 3.25 16.1446H1.75ZM13.7748 19.4084C12.9825 19.8307 12.0175 19.8307 11.2252 19.4084L10.5196 20.7321C11.7529 21.3895 13.2471 21.3895 14.4804 20.7321L13.7748 19.4084ZM13.7982 4.1546C12.9801 4.62806 11.9617 4.65168 11.1328 4.21342L10.4317 5.53945C11.7239 6.22275 13.291 6.18122 14.5495 5.45286L13.7982 4.1546ZM3.25 4.99878C3.25 4.30159 3.80243 3.78549 4.43639 3.82445L4.52841 2.32728C2.97017 2.23151 1.75 3.49962 1.75 4.99878H3.25Z" fill="#A1C038"></path>
+                                </svg>
+                              </div>
+                              <!---->
+                            </vcb-svg-custom>
+                            <div _ngcontent-ng-c1651935848="" class="title"> Hướng dẫn sử dụng dịch vụ </div>
+                          </a>
+                          <a _ngcontent-ng-c1651935848="" class="flex flex-col items-center justify-center space-y-2 text-center hover:text-primary-2 ng-star-inserted">
+                            <vcb-svg-custom _ngcontent-ng-c1651935848="" _nghost-ng-c3429960438="">
+                              <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20.5 20V14M20.5 14L22.5 16M20.5 14L18.5 16" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M16 14V20M16 20L18 18M16 20L14 18" stroke="#074C31" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  <path d="M10.5 16H6.5" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M2.5 10L22.5 10" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <path d="M21.3284 5.17157L21.8588 4.64124V4.64124L21.3284 5.17157ZM21.7491 11.0022C21.7503 11.4164 22.0871 11.7512 22.5013 11.75C22.9155 11.7488 23.2503 11.412 23.2491 10.9978L21.7491 11.0022ZM12 20.75C12.4142 20.75 12.75 20.4142 12.75 20C12.75 19.5858 12.4142 19.25 12 19.25V20.75ZM10.5 4.75H14.5V3.25H10.5V4.75ZM10.5 19.25C8.59318 19.25 7.23851 19.2484 6.21085 19.1102C5.20476 18.975 4.62511 18.7213 4.2019 18.2981L3.14124 19.3588C3.88961 20.1071 4.83855 20.4392 6.01098 20.5969C7.16182 20.7516 8.63558 20.75 10.5 20.75V19.25ZM1.75 12C1.75 13.8644 1.74841 15.3382 1.90313 16.489C2.06076 17.6614 2.39288 18.6104 3.14124 19.3588L4.2019 18.2981C3.77869 17.8749 3.52502 17.2952 3.38976 16.2892C3.25159 15.2615 3.25 13.9068 3.25 12H1.75ZM14.5 4.75C16.4068 4.75 17.7615 4.75159 18.7892 4.88976C19.7952 5.02502 20.3749 5.27869 20.7981 5.7019L21.8588 4.64124C21.1104 3.89288 20.1614 3.56076 18.989 3.40313C17.8382 3.24841 16.3644 3.25 14.5 3.25V4.75ZM10.5 3.25C8.63558 3.25 7.16182 3.24841 6.01098 3.40313C4.83855 3.56076 3.88961 3.89288 3.14124 4.64124L4.2019 5.7019C4.62511 5.27869 5.20476 5.02502 6.21085 4.88976C7.23851 4.75159 8.59318 4.75 10.5 4.75V3.25ZM3.25 12C3.25 10.0932 3.25159 8.73851 3.38976 7.71085C3.52502 6.70476 3.77869 6.12511 4.2019 5.7019L3.14124 4.64124C2.39288 5.38961 2.06076 6.33855 1.90313 7.51098C1.74841 8.66182 1.75 10.1356 1.75 12H3.25ZM23.2491 10.9978C23.2445 9.45069 23.2191 8.19729 23.0484 7.19112C22.874 6.16313 22.5368 5.31932 21.8588 4.64124L20.7981 5.7019C21.1831 6.08692 21.4267 6.60017 21.5696 7.44205C21.7161 8.30574 21.7445 9.435 21.7491 11.0022L23.2491 10.9978ZM12 19.25H10.5V20.75H12V19.25Z" fill="#A1C038"></path>
+                                </svg>
+                              </div>
+                              <!---->
+                            </vcb-svg-custom>
+                            <div _ngcontent-ng-c1651935848="" class="title"> Hướng dẫn giao dịch an toàn </div>
+                          </a>
+                          <a _ngcontent-ng-c1651935848="" class="flex flex-col items-center justify-center space-y-2 text-center hover:text-primary-2 ng-star-inserted">
+                            <vcb-svg-custom _ngcontent-ng-c1651935848="" _nghost-ng-c3429960438="">
+                              <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <circle cx="12.5" cy="12" r="10" stroke="#A1C038" stroke-width="1.5"></circle>
+                                  <path d="M10.625 8.875C10.625 7.83947 11.4645 7 12.5 7C13.5355 7 14.375 7.83947 14.375 8.875C14.375 9.56245 14.005 10.1635 13.4534 10.4899C12.978 10.7711 12.5 11.1977 12.5 11.75V13" stroke="#074C31" stroke-width="1.5" stroke-linecap="round"></path>
+                                  <circle cx="12.5" cy="16" r="1" fill="#074C31"></circle>
+                                </svg>
+                              </div>
+                              <!---->
+                            </vcb-svg-custom>
+                            <div _ngcontent-ng-c1651935848="" class="title"> Câu hỏi thường gặp </div>
+                          </a>
+                          <!---->
+                        </div>
+                      </div>
+                    </div>
+                    <div _ngcontent-ng-c1651935848="" class="h-full col">
+                      <div _ngcontent-ng-c1651935848="" class="h-full box-black box-black-right">
+                        <div _ngcontent-ng-c1651935848="" class="flex !items-center h-full box-black-inner">
+                          <div _ngcontent-ng-c1651935848="" class="flex justify-between space-x-4 lg:justify-center">
+                            <div _ngcontent-ng-c1651935848="" class="flex gap-1 p-1 pr-2 rounded-full cursor-pointer flag">
+                              <img _ngcontent-ng-c1651935848="" src="/assets/media/flags/en-circle.svg" alt="" width="24" height="24" class="ng-star-inserted">
+                              <div _ngcontent-ng-c1651935848="" class="title ng-star-inserted">ENG</div>
+                              <!---->
+                              <!---->
+                              <!---->
+                            </div>
+                            <div _ngcontent-ng-c1651935848="" class="hidden lg:block divider w-[1px] bg-white/30 self-stretch"></div>
+                            <vcb-button _ngcontent-ng-c1651935848="" _nghost-ng-c1414895745="">
+                              <!---->
+                              <a _ngcontent-ng-c1414895745="" nz-tooltip="" type="button" class="btn-only-icon btn size-medium level-text-link-white ng-star-inserted" href="/auth/tel:">
+                                <div _ngcontent-ng-c1414895745="" class="prefix ng-star-inserted">
+                                  <vcb-svg-custom _ngcontent-ng-c1414895745="" _nghost-ng-c3429960438="">
+                                    <div _ngcontent-ng-c3429960438="" aria-label="My icon" class="icon-svg fill- w-6 h-6">
+                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 17V12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V17" stroke="#A1C038" stroke-width="1.5"></path>
+                                        <path opacity="0.5" d="M22 15.5V17.5" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <path opacity="0.5" d="M2 15.5V17.5" stroke="#A1C038" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <path d="M8 13.8446C8 13.0802 8 12.698 7.82526 12.4323C7.73733 12.2985 7.62061 12.188 7.4844 12.1095C7.21371 11.9535 6.84812 11.9896 6.11694 12.0617C4.88487 12.1831 4.26884 12.2439 3.82737 12.5764C3.60394 12.7448 3.41638 12.9593 3.27646 13.2067C3 13.6955 3 14.3395 3 15.6276V17.1933C3 18.4685 3 19.1061 3.28198 19.5986C3.38752 19.7829 3.51981 19.9491 3.67416 20.0913C4.08652 20.4714 4.68844 20.5901 5.89227 20.8275C6.73944 20.9945 7.16302 21.078 7.47564 20.9021C7.591 20.8372 7.69296 20.7493 7.77572 20.6434C8 20.3565 8 19.9078 8 19.0104V13.8446Z" stroke="#074C31" stroke-width="1.5"></path>
+                                        <path d="M16 13.8446C16 13.0802 16 12.698 16.1747 12.4323C16.2627 12.2985 16.3794 12.188 16.5156 12.1095C16.7863 11.9535 17.1519 11.9896 17.8831 12.0617C19.1151 12.1831 19.7312 12.2439 20.1726 12.5764C20.3961 12.7448 20.5836 12.9593 20.7235 13.2067C21 13.6955 21 14.3395 21 15.6276V17.1933C21 18.4685 21 19.1061 20.718 19.5986C20.6125 19.7829 20.4802 19.9491 20.3258 20.0913C19.9135 20.4714 19.3116 20.5901 18.1077 20.8275C17.2606 20.9945 16.837 21.078 16.5244 20.9021C16.409 20.8372 16.307 20.7493 16.2243 20.6434C16 20.3565 16 19.9078 16 19.0104V13.8446Z" stroke="#074C31" stroke-width="1.5"></path>
+                                      </svg>
+                                    </div>
+                                    <!---->
+                                  </vcb-svg-custom>
+                                </div>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                              </a>
+                              <!---->
+                              <!---->
+                              <!---->
+                            </vcb-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+              </div>
+            </div>
+          </vcb-login-layout>
+        </vcb-login>
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+      </vcb-authentication>
+      <!---->
+      <vcb-loading _ngcontent-ng-c202752347="" _nghost-ng-c2746547830="">
+        <!---->
+        <!---->
+        <!---->
+      </vcb-loading>
+      <div _ngcontent-ng-c202752347="" style="position: absolute; bottom: 0;"></div>
+    </vcb-digibank-omni-root>
+    <vcb-toast _nghost-ng-c2127256787="">
+      <!---->
+      <!---->
+    </vcb-toast>
+    <vcb-receipt _nghost-ng-c1654751229="" style="display: none;">
+      <div _ngcontent-ng-c1654751229="" id="print-area" class="print-area">
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <div _ngcontent-ng-c1654751229="" class="text-center mb-15 mt-15">
+          <b _ngcontent-ng-c1654751229="">Cám ơn Quý khách đã sử dụng dịch vụ của Vietcombank!</b>
+          <br _ngcontent-ng-c1654751229="">
+          <i _ngcontent-ng-c1654751229="">Thank you for banking with Vietcombank!</i>
+        </div>
+        <div _ngcontent-ng-c1654751229="">
+          <span _ngcontent-ng-c1654751229="" class="undeline">Lưu ý</span>: Biên lai chuyển tiền này không thay cho các cam kết của NHTMCP Ngoại Thương Việt Nam về các nghĩa vụ của khách hàng được xác nhận với bên thứ ba. <br _ngcontent-ng-c1654751229="">
+          <i _ngcontent-ng-c1654751229="">This confirmation is not Vietcombank's commitment regarding customer's obligation with third party.</i>
+          <p _ngcontent-ng-c1654751229=""> Để đảm bảo an toàn bảo mật, bảo vệ quyền và lợi ích của chính mình, khi thực hiện các giao dịch trên các kênh ngân hàng điện tử của Vietcombank, Quý khách vui lòng <b _ngcontent-ng-c1654751229="">đọc kỹ và tuân theo các thông tin hướng dẫn giao dịch an toàn </b>
+            <a _ngcontent-ng-c1654751229="" href="https://portal.vietcombank.com.vn/content/News/Vietcombank/PublishingImages/OldNews/15062017_huong_dan_gd_nhdt.pdf" target="_bank" class="link"> tại đây</a>.
+          </p>
+          <p _ngcontent-ng-c1654751229=""> Mọi thông tin chi tiết, truy cập website <a _ngcontent-ng-c1654751229="" href="https://www.vietcombank.com.vn">www.vietcombank.com.vn</a> hoặc liên hệ Trung tâm hỗ trợ khách hàng 24/7 <b _ngcontent-ng-c1654751229="">1900 54 54 13</b>
+          </p>
+          <p _ngcontent-ng-c1654751229="" class="i"> To ensure safety and security as well as to protect your rights and benefits, when making transactions via Vietcombank e-channels, please read carefully and follow transaction instructions <a _ngcontent-ng-c1654751229="" href="" target="_blank">here</a>
+          </p>
+          <p _ngcontent-ng-c1654751229="" class="i">For further infomation, please direct your inquiries to:</p>
+          <p _ngcontent-ng-c1654751229="" class="i"> - Our website: <a _ngcontent-ng-c1654751229="" href="https://www.vietcombank.com.vn">www.vietcombank.com.vn</a>
+          </p>
+          <p _ngcontent-ng-c1654751229="" class="i">- Our 24-hour Customer service: 1900 54 54 13</p>
+        </div>
+      </div>
+    </vcb-receipt>
+    <!---->
+    <script src="/polyfills.12bb414d08270cc1.js?v=3.1.5.1" type="module"></script>
+    <script src="/vendor.4a4b98587f53778c.js?v=3.1.5.1" type="module"></script>
+    <script src="/main.d488bcaf5323bc79.js?v=3.1.5.1" type="module"></script>
+  </body>
+  <chatgpt-sidebar data-gpts-theme="dark"></chatgpt-sidebar>
+  <chatgpt-sidebar-popups data-gpts-theme="dark"></chatgpt-sidebar-popups>
+</html>
