@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ./node_modules/.bin/babel-node ./src/index.js",
     "start": "nodemon ./src/index.js",
+    "build": "npx prisma migrate dev; node -r ./node_modules/@babel/register ./src/helper/initdata.js",
+    "dev": "nodemon --exec ./node_modules/.bin/babel-node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -37,7 +37,7 @@ app.use(async (req,res,next) => {
     }
     else {
       let token = value
-      const publickey = await readFile(path.join(__dirname,'/src/helper/key/publickey.pem'),'utf-8') 
+      const publickey = await readFile(path.join(__dirname,'/helper/key/publickey.pem'),'utf-8') 
       let decoded = jwt.verify(token, publickey)
       req.decoded = decoded
 
@@ -59,7 +59,7 @@ app.use(async (req,res,next) => {
 });
 
 app.get('/', async (req, res) => {
-  return res.render('index1')
+  return res.render('index')
 })
 
 app.post('/login', async (req, res) => {
@@ -78,7 +78,7 @@ app.post('/login', async (req, res) => {
       id: result[0].id,
       username: result[0].username
     }
-    let privateKey = await readFile(path.join(__dirname,'/src/helper/key/privatekey.pem'),'utf-8')
+    let privateKey = await readFile(path.join(__dirname,'/helper/key/privatekey.pem'),'utf-8')
     let token = jwt.sign(payload, privateKey, { algorithm: 'RS256', header });
     res.cookie("jwt", token, {
       httpOnly: true,

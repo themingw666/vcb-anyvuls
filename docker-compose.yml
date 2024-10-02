@@ -10,12 +10,13 @@ services:
       - "5432:5432"
 
   web:
-    image: "vcb"
+    image: "moikhoo23/vcbne"
     ports:
-      - "3000:3000"
+      - "80:3000"
+    entrypoint: ["/bin/sh", "./src/scripts/entrypoint.sh"]
     depends_on:
       - db
-    command: ["sh", "./src/script/entrypoint.sh"]
+    restart: always
   
 volumes:
   pgdata:
