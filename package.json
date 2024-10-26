@@ -16,7 +16,7 @@
   },
   "description": "",
   "dependencies": {
-    "@babel/runtime": "^7.25.6",
+    "@babel/runtime": "^7.25.7",
     "@prisma/client": "^5.19.1",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.10",
